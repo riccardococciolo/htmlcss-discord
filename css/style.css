@@ -4,9 +4,27 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* header */
 header {
-    background-color: skyblue;
+    background-color: rgb(37 94 233);
+    color: white;
 }
 
 /* nav */
@@ -19,24 +37,27 @@ header {
 .flex-nav {
     display: flex;
     justify-content: space-between;
-    background-color: orange;
 }
 
 /* nav-element */
 .nav-element {
-    border: 1px dashed black;
-    padding: .3em;
+    padding: .1em;
 }
 
 .nav-element.logo {
     width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .nav-element.link {
     width: 60%;
     display: flex;
     justify-content: center;
-    gap: .3rem;
+    align-items: center;
+    gap: 2rem;
+    color: lightgray;
     
 }
 
@@ -44,14 +65,25 @@ header {
     width: 20%;
     display: flex;
     justify-content: flex-end;
-    
+    align-items: center;  
+}
+
+.login-button {
+    color: black;
+    background-color: white;
+    padding: .4rem;
+    border: .1rem;
+    border-radius: 1rem;
 }
 
 /* main */
 
 /* hero */
 .hero {
-    background-color: blue;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    color: white;
+    padding: 3rem 0;
 }
 
 .container-hero {
@@ -60,15 +92,30 @@ header {
     padding: 30px;
 }
 
-.flex-hero {
+.hero-element {
     display: flex;
-    justify-content: space-between;
-    background-color: magenta;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
 }
 
-.hero-element {
-    border: 1px dashed black;
-    height: 250px;
+.margin-top {
+    margin-top: .5rem;
+}
+
+.hero-button {
+    background-color: white;
+    padding: .5rem;
+    border: .1rem;
+    border-radius: 1rem;
+}
+
+.hero-button.white {
+    color: black;
+}
+
+.hero-button.black {
+    background-color: black;
 }
 
 /* section-1 */
@@ -218,7 +265,7 @@ header {
     display: flex;
 }
 
-.link {
+.menu {
     width: calc(100% / 4);
     border: 1px dashed black;
     height: 250px;
